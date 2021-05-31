@@ -773,6 +773,17 @@
                 },
                 {
                     "name": "",
+                    "id": "861471bc-814c-4c88-adfc-3ae2fe66404f",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "5b853efd-1a70-4a8b-bd1b-84100070d99c",
                     "path": "<Keyboard>/b",
                     "interactions": "",

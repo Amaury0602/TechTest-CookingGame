@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ecaf99b37d57be4d98e4021c313758b, type: 3}
+  m_Name: SliceEffect
+  m_EditorClassIdentifier: 
+  visualEffect: {fileID: 6498089936707103637, guid: 81439000337fce54dbf5fe426d82d855, type: 3}
+  soundClips:
+  - {fileID: 8300000, guid: 6bd7fbb468ec3a3499c7a780d70b7a3a, type: 3}
+  effectDuration: 1

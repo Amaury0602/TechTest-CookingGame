@@ -45,30 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cccf31a5bead8e43bb87fbdde4858b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_InteractionLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_AttachTransform: {fileID: 0}
-  m_StartingSelectedInteractable: {fileID: 0}
-  m_OnHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ShowInteractableHoverMeshes: 1
-  m_InteractableHoverMeshMaterial: {fileID: 0}
-  m_InteractableCantHoverMeshMaterial: {fileID: 0}
-  m_SocketActive: 1
-  m_InteractableHoverScale: 0.5
-  m_RecycleDelayTime: 1
+  offsetY: 0
+  parentInventory: {fileID: 0}
 --- !u!135 &1029020807001518790
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -95,15 +73,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ca205731cdf70041a2e9b758567918a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ca205731cdf70041a2e9b758567918a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ca205731cdf70041a2e9b758567918a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ca205731cdf70041a2e9b758567918a, type: 3}
       propertyPath: m_LocalPosition.x
