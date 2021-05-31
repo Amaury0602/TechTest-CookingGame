@@ -2208,7 +2208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f7216a253ff5f84398720151d4ad78f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countDownTime: 20
+  countDownTime: 60
   retryButton: {fileID: 1785182827}
   onTimerEnd: {fileID: 11400000, guid: e39383ecdff6a0e46bfe2e2e79f666dc, type: 2}
 --- !u!114 &649467696047623951

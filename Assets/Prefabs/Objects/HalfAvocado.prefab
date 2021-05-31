@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 4871648111241797820}
   - component: {fileID: 2222606639386045836}
   - component: {fileID: -77461522630323050}
+  - component: {fileID: 4963175042704168104}
   m_Layer: 0
   m_Name: HalfAvocado
   m_TagString: Untagged
@@ -348,3 +349,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  alreadyCounted: 0
+  onFruitDestroyed: {fileID: 11400000, guid: b275b070b886b6e45a4df6aa07e7c74b, type: 2}
+--- !u!114 &4963175042704168104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7711670149142925301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68147b12fcbe5b84eafabf1225e2cee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseEvent: {fileID: 11400000, guid: e39383ecdff6a0e46bfe2e2e79f666dc, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -77461522630323050}
+        m_TargetAssemblyTypeName: Fruit.FruitType, Assembly-CSharp
+        m_MethodName: DestroyFruitOnTimerEnds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

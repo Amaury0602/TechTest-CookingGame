@@ -10,6 +10,9 @@ namespace Fruit
         public Type type;
         [HideInInspector] public bool alreadyCounted = false;
 
+        [Header("Reference the local Event")]
+        [SerializeField] private LocalEvent onFruitDestroyed;
+
         public enum Type
         {
             Apple, Avocado
@@ -18,6 +21,12 @@ namespace Fruit
         public void CountInPot()
         {
             alreadyCounted = true;
+        }
+
+        public void DestroyFruitOnTimerEnds()
+        {
+            onFruitDestroyed.Raise(transform.position);
+            Destroy(gameObject);
         }
     }
 }
