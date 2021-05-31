@@ -3029,6 +3029,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 958847132}
+    - target: {fileID: 7141852293900647458, guid: fb31438f85cba074e883a239dee9bc99, type: 3}
+      propertyPath: countDownTime
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7248066065707360522, guid: fb31438f85cba074e883a239dee9bc99, type: 3}
       propertyPath: m_RootOrder
       value: 1

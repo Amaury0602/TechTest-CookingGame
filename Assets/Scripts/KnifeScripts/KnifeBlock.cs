@@ -38,7 +38,6 @@ namespace Knife
             }
             Instantiate(knife, interactor.transform.position, Quaternion.identity);
             aSource.Play();
-            XRGrabInteractable knifeGrab = knife.GetComponent<XRGrabInteractable>();
         }
 
         //Knife gets grabbable when the difficulty is selected

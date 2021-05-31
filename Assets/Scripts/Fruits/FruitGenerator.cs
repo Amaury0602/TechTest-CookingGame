@@ -28,14 +28,6 @@ namespace Fruit
 
         public void StartSpawning()
         {
-            if (spawnedFruits.Count > 0)
-            {
-                foreach (var fruit in spawnedFruits)
-                {
-                    if (fruit != null) Destroy(fruit);
-                }
-                spawnedFruits.Clear();
-            }
             shouldSpawn = true;
             StartCoroutine(StartSpawnCoroutine());
         }
@@ -83,6 +75,14 @@ namespace Fruit
         //This function gets called when the "Timer Ends" Event is triggered
         public void StopSpawning()
         {
+            if (spawnedFruits.Count > 0)
+            {
+                foreach (var fruit in spawnedFruits)
+                {
+                    if (fruit != null) Destroy(fruit);
+                }
+                spawnedFruits.Clear();
+            }
             shouldSpawn = false;
             StopCoroutine(StartSpawnCoroutine());
         }
