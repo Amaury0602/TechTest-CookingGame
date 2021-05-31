@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Fruit
 {
-    public class FruitType : MonoBehaviour
+    public class SlicedFruit : MonoBehaviour
     {
         /// <summary>
         /// This script allows us to tag fruits and set a specific ingredient for the pot to receive

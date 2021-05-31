@@ -8,7 +8,7 @@ namespace Fruit
     public class IngredientDetector : MonoBehaviour
     {
         [Header("Select the fruit that shall receive this pot")]
-        [SerializeField] private FruitType.Type fruitToReceive;
+        [SerializeField] private SlicedFruit.Type fruitToReceive;
 
         [Header("Events to raise when fruit is received")]
         [SerializeField] private IntEvent onFruitReceived;
@@ -33,16 +33,16 @@ namespace Fruit
         {
             aSource = GetComponent<AudioSource>();
             aSource.volume = 0;
-            fruitIntCode = fruitToReceive == FruitType.Type.Apple ? 0 : 1;
+            fruitIntCode = fruitToReceive == SlicedFruit.Type.Apple ? 0 : 1;
         }
 
         // Start is called before the first frame update
         private void OnTriggerEnter(Collider other)
         {
             if (!isAcceptingFruits) return;
-            if (other.GetComponent<FruitType>() != null)
+            if (other.GetComponent<SlicedFruit>() != null)
             {
-                FruitType fruit = other.GetComponent<FruitType>();
+                SlicedFruit fruit = other.GetComponent<SlicedFruit>();
                 if (fruit.type == fruitToReceive && !fruit.alreadyCounted)
                 {
                     fruit.CountInPot();
