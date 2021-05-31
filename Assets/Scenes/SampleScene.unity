@@ -2968,6 +2968,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6619130648642190645, guid: d2d44cd417a0f4e4aa01c37b4aed31d8, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6619130649100546893, guid: d2d44cd417a0f4e4aa01c37b4aed31d8, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 6619130649143791281, guid: d2d44cd417a0f4e4aa01c37b4aed31d8, type: 3}
       propertyPath: m_RootOrder
       value: 0

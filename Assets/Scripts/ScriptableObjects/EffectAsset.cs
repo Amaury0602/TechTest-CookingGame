@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// ScriptableObject, useful when you need to instantiate a special effect associated with sound 
+/// Event asset, useful when you need to instantiate a special effect associated with sound 
 /// at a specific location.
 /// </summary>
 

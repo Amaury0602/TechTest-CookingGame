@@ -23,7 +23,7 @@ namespace Fruit
         private List<GameObject> fruitsInPot = new List<GameObject>();
 
         /// <summary>
-        /// This code allows us to send the right event to the UI
+        /// This variable allows us to send the right event to the UI
         /// Code 0 corresponds to Apple
         /// Code 1 corresponds to Avocado
         /// </summary>

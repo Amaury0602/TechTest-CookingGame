@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -9,7 +7,6 @@ public class HandController : MonoBehaviour
     private ActionBasedController controller;
     private XRInteractorLineVisual interactorLine;
 
-    // Start is called before the first frame update
     void Start()
     {
         interactorLine = transform.parent.GetComponent<XRInteractorLineVisual>();
@@ -30,11 +27,5 @@ public class HandController : MonoBehaviour
     {
         anim.SetTrigger("Close");
         interactorLine.enabled = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
