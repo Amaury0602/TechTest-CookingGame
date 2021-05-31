@@ -1,7 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Event asset that you can reference in the inspector to trigger Listeners
+/// Holds an integer payload
+/// </summary>
 [CreateAssetMenu(fileName = "New Int Event", menuName = "ScriptableObject/Event/IntEvent")]
+
 public class IntEvent : ScriptableObject
 {
     private List<IntEventListener> listeners = new List<IntEventListener>();

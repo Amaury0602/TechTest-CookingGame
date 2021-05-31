@@ -5,7 +5,7 @@ using DG.Tweening;
 namespace Fruit 
 {
     [RequireComponent(typeof(AudioSource))]
-    public class IngredientDetector : MonoBehaviour
+    public class FruitDetector : MonoBehaviour
     {
         [Header("Select the fruit that shall receive this pot")]
         [SerializeField] private SlicedFruit.Type fruitToReceive;

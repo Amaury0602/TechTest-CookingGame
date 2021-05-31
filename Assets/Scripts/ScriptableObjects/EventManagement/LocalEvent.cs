@@ -1,6 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Event asset that you can reference in the inspector to trigger Listeners
+/// Holds an Vector3 payload
+/// </summary>
 [CreateAssetMenu(fileName = "New Local Event", menuName = "ScriptableObject/Event/LocalEvent")]
 public class LocalEvent : ScriptableObject
 {

@@ -8,8 +8,14 @@ namespace WorldSpaceUI
     [RequireComponent(typeof(IntEventListener))]
     public class FruitCounterUI : MonoBehaviour
     {
-        private TMP_Text[] counterTexts;
+        /// <summary>
+        /// fruitCounters tracks the number of apples and avocados
+        /// the first integer represents the fruit code (0 = apple and 1 = avocado)
+        /// the second integer represents the number of fruits counted
+        /// </summary>
         private Dictionary<int, int> fruitCounters = new Dictionary<int, int>();
+
+        private TMP_Text[] counterTexts;
         private float initialFontSize;
 
         [Header("Tween Parameters")]

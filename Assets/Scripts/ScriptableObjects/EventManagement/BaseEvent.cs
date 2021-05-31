@@ -2,8 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Base Event that you can create as an asset and place in "Assets/GameEvents" folder. Reference it inside a script and call the Raise 
-/// function to trigger all the Base Event Listeners.
+/// Event asset that you can reference in the inspector to trigger Listeners
+/// Doesn't hold any payload
 /// </summary>
 
 [CreateAssetMenu(fileName = "New Base Event", menuName = "ScriptableObject/Event/BaseEvent")]
