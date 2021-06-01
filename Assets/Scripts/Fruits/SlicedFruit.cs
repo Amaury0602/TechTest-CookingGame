@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 namespace Fruit
 {
+    [RequireComponent(typeof(XRGrabInteractable))]
     public class SlicedFruit : MonoBehaviour
     {
         /// <summary>

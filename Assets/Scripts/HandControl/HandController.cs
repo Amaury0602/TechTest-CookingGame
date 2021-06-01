@@ -13,7 +13,7 @@ public class HandController : MonoBehaviour
         controller = transform.parent.GetComponent<ActionBasedController>();
         anim = GetComponent<Animator>();
 
-        controller.selectAction.action.performed += OnSelectAction;
+        controller.selectAction.action.performed += OnSelect;
         controller.selectAction.action.canceled += OnDeselect;
     }
 
@@ -23,9 +23,16 @@ public class HandController : MonoBehaviour
         interactorLine.enabled = true;
     }
 
-    private void OnSelectAction(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    private void OnSelect(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         anim.SetTrigger("Close");
         interactorLine.enabled = false;
+    }
+
+    private void OnDisable()
+    {
+
+        controller.selectAction.action.performed -= OnSelect;
+        controller.selectAction.action.canceled -= OnDeselect;
     }
 }

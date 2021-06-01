@@ -8,9 +8,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Effect Asset", menuName = "ScriptableObject/Effect")]
 public class EffectAsset : ScriptableObject
 {
-    public GameObject visualEffect;
-    public AudioClip[] soundClips;
-    public float effectDuration = 1f;
+    [SerializeField] private GameObject visualEffect;
+    [SerializeField] private AudioClip[] soundClips;
+    [SerializeField] private float effectDuration = 1f;
 
     public void PlayEffect(AudioSource source, Vector3 position)
     {
